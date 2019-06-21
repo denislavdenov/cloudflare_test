@@ -8,7 +8,7 @@ provider "cloudflare" {
 }
 
 resource "cloudflare_record" "foobar" {
-  domain = "${var.cloudflare_zone}"
+  domain = "ddenov.tk"
   name   = "ddenov.tk/notes"
   value  = "3.218.36.59"
   type   = "A"

@@ -9,8 +9,8 @@ provider "cloudflare" {
 
 resource "cloudflare_record" "foobar" {
   domain = "${var.cloudflare_zone}"
-  name   = "ddenov.tk"
-  value  = "3.218.36.59:3000"
+  name   = "ddenov.tk/notes"
+  value  = "3.218.36.59"
   type   = "A"
   ttl    = 3600
 }
